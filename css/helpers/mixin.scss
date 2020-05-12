@@ -1,0 +1,27 @@
+
+//mixin
+@mixin borda-arredondada {
+    -moz-border-radius: $raio;
+    -o-border-radius: $raio;
+    -ms-border-radius: $raio;
+    border-radius: $raio;
+  }
+  
+  @mixin image-replacement {
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+  }
+  
+  @mixin retorna-largura ($multiplicador){
+    width: $multiplicador * $tamanho-da-fonte-padrao;
+  }
+
+  @function multiplica-pela-fonte ($multiplicador){
+    @return round ($multiplicador * $tamanho-da-fonte-padrao);
+  }
+
+
+
+  ///@import "compass/css3";
+  
